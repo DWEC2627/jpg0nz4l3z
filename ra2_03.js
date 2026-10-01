@@ -1,7 +1,12 @@
-for(i = 1; i <= 10; i++){
-    if(i != 10){
-        console.log("AUR-00"+i);
-    }else{
-        console.log("AUR-0"+i);
+let n = 100
+let longitud = String(n).length;
+
+for(let i=1; i<=n; i++){
+    let varStr = String(i);
+
+    while(varStr.length < longitud){
+        varStr = "0" + varStr;
     }
+
+    console.log("AUR-" + varStr);
 }
