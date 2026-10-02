@@ -58,7 +58,7 @@ function peliculaConstructor(titulo, director, anio, genero, duracion, disponibl
     this.duracion = duracion;
     this.disponible = disponible;
     this.ficha = function() {
-        return this.titulo + " " + this.director + " " + this.anio + " " + this.genero + " " + this.duracion + " " + (this.disponible? "si": "no");
+        return "titulo: " + this.titulo + "\n" + "director: " + this.director + "\n" + "año: " + this.anio + "\n" + "genero: " + this.genero + "\n" + "duracion: "+ this.duracion + "\n" + "disponible: " + (this.disponible? "si": "no");
     };
     this.comprobarDisponibilidad = function(){
         return this.disponible? "si": "no";
