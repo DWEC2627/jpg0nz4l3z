@@ -22,5 +22,5 @@ setTimeout(() => console.log(3), 1000);
 setTimeout(() => console.log(2), 2000);
 setTimeout(() => console.log(1), 3000);
 setTimeout(() => {
-    console.log(puedeAlquilar(true, 18, 50, 1, 100))
+    console.log(puedeAlquilar(true, 18, 50, 1, 100) ? "Se puede alquilar": "No se puede alquilar");
 }, 3000);
